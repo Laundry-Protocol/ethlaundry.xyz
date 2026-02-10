@@ -1,0 +1,6 @@
+[package]
+name = "inclusion"
+type = "bin"
+authors = ["Laundry Cash"]
+
+[dependencies]

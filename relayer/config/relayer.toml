@@ -1,0 +1,39 @@
+# Laundry Cash Relayer Configuration
+
+# Ethereum endpoints
+[ethereum]
+http_url = "https://eth.llamarpc.com"
+ws_url = "wss://eth.llamarpc.com"
+chain_id = 1
+
+# Arbitrum endpoints
+[arbitrum]
+http_url = "https://arb1.arbitrum.io/rpc"
+ws_url = "wss://arb1.arbitrum.io/ws"
+chain_id = 42161
+
+# Polygon endpoints
+[polygon]
+http_url = "https://polygon-rpc.com"
+ws_url = "wss://polygon-bor-rpc.publicnode.com"
+chain_id = 137
+
+# Relayer private key (use environment variable in production)
+private_key = "${RELAYER_PRIVATE_KEY}"
+
+# Database configuration
+database_path = "./data/relayer.db"
+
+# P2P configuration
+[p2p]
+listen_addr = "/ip4/0.0.0.0/tcp/9000"
+bootstrap_peers = [
+    # Add bootstrap peers here
+]
+max_peers = 50
+
+# Prover configuration
+[prover]
+enabled = true
+max_concurrent = 4
+timeout_secs = 120

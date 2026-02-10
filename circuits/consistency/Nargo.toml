@@ -1,0 +1,6 @@
+[package]
+name = "consistency"
+type = "bin"
+authors = ["Laundry Cash"]
+
+[dependencies]
