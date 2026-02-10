@@ -1,0 +1,22 @@
+services:
+  - type: web
+    name: laundry-indexer
+    runtime: node
+    nodeVersion: 22.13.1
+    buildCommand: npm install && npm rebuild better-sqlite3 && npm run build
+    startCommand: npm start
+    envVars:
+      - key: PORT
+        value: 10000
+      - key: RPC_URL
+        sync: false
+      - key: POOL_ADDRESS
+        value: "0xf7401D51CcB88888B9d8E2B5d92F4947E279A885"
+      - key: START_BLOCK
+        value: "24402370"
+      - key: POLL_INTERVAL
+        value: "12000"
+      - key: ROOT_POSTER_KEY
+        sync: false
+      - key: CORS_ORIGIN
+        value: "https://laundrycash.com"
