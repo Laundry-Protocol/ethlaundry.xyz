@@ -190,7 +190,7 @@ Atomic swap contract for cross-chain transfers:
 
 ## Frontend
 
-The web interface provides a Tornado Cash-inspired UI with:
+The web interface provides a Eth inspired UI with:
 
 - **Deposit**: Generate notes and deposit ETH to the privacy pool
 - **Withdraw**: Withdraw funds using ZK proofs
